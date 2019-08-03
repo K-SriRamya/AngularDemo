@@ -1,0 +1,14 @@
+<p>showemp works!</p>
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let emp of dept">
+      <td>{{emp.id}}</td>
+      <td>{{emp.name}}</td>  
+      <td><button (click)="delete(emp)">Delete</button></td>
+    
+    </tr>
+  </table>
